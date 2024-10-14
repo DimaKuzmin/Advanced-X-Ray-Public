@@ -37,6 +37,14 @@ private:
 	typedef CHudItemObject inherited;
 
 public:
+
+	LPCSTR wpn_scope_def_bone = "wpn_scope";
+	LPCSTR wpn_silencer_def_bone = "wpn_silencer";
+	LPCSTR wpn_launcher_def_bone = "wpn_launcher";
+	LPCSTR wpn_laser_def_bone = "wpn_laser";
+	LPCSTR wpn_torch_def_bone = "wpn_torch";
+
+
 							CWeapon				();
 	virtual					~CWeapon			();
 
@@ -220,6 +228,7 @@ public:
 	//обновление видимости для косточек аддонов
 			void UpdateAddonsVisibility();
 			void UpdateHUDAddonsVisibility();
+			void UpdateBoreState();
 	//инициализация свойств присоединенных аддонов
 	virtual void InitAddons();
 
@@ -424,7 +433,10 @@ public:
 	virtual const Fvector&	get_CurrentFirePoint2	()			{ return get_LastFP2();				}
 	virtual const Fmatrix&	get_ParticlesXFORM		()			{ UpdateFireDependencies(); return m_current_firedeps.m_FireParticlesXForm;	}
 	virtual void			ForceUpdateFireParticles();
+
+#ifdef DEBUG
 	virtual void			debug_draw_firedeps		();
+#endif
 
 private:
 	string64 guns_aim_anm;
@@ -643,7 +655,8 @@ public:
 	virtual void			SetActivationSpeedOverride	(Fvector const& speed);
 			bool			GetRememberActorNVisnStatus	() {return m_bRememberActorNVisnStatus;};
 	virtual void			EnableActorNVisnAfterZoom	();
-	
+	virtual void			UpdateNightVision();
+
 	virtual void				DumpActiveParams			(shared_str const & section_name, CInifile & dst_ini) const;
 	virtual shared_str const	GetAnticheatSectionName		() const { return cNameSect(); };
 	virtual void				OnBulletHit();

@@ -44,6 +44,7 @@ protected:
 protected:
 	virtual void	OnMagazineEmpty	();
 
+	// MOVED TO STATES.cpp
 	virtual void	switch2_Idle	();
 	virtual void	switch2_Fire	();
 	virtual void	switch2_Empty	();
@@ -56,6 +57,7 @@ protected:
 	virtual void	switch2_LaserSwitch();
 	virtual void	switch2_FlashlightSwitch();
 	
+	// IN orig.cpp
 	virtual void	OnShot			();	
 	
 	virtual void	OnEmptyClick	();
@@ -170,6 +172,7 @@ protected:
 protected:
 	virtual bool	AllowFireWhileWorking() {return false;}
 
+	// MOVED TO ANIMATION.cpp
 	//виртуальные функции для проигрывания анимации HUD
 	virtual void	PlayAnimShow		();
 	virtual void	PlayAnimHide		();

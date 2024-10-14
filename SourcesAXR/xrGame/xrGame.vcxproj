@@ -48,7 +48,7 @@
     <UseOfMfc>false</UseOfMfc>
     <CharacterSet>MultiByte</CharacterSet>
     <WholeProgramOptimization>true</WholeProgramOptimization>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Mixed|Win32'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
@@ -58,7 +58,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Mixed|x64'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <UseOfMfc>false</UseOfMfc>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
@@ -72,7 +72,7 @@
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseOfMfc>false</UseOfMfc>
     <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Mixed|Win32'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
@@ -9363,6 +9363,7 @@
       <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)$(ProjectName)_script.pch</PrecompiledHeaderOutputFile>
       <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)$(ProjectName)_script.pch</PrecompiledHeaderOutputFile>
     </ClCompile>
+    <ClCompile Include="WeaponInertion.cpp" />
     <ClCompile Include="WeaponKnife.cpp" />
     <ClCompile Include="WeaponKnife_script.cpp">
       <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">pch_script.h</PrecompiledHeaderFile>
@@ -9419,6 +9420,16 @@
       <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)$(ProjectName)_script.pch</PrecompiledHeaderOutputFile>
     </ClCompile>
     <ClCompile Include="WeaponMagazinedWGrenade.cpp" />
+    <ClCompile Include="WeaponMagazinedWGrenade_Addons.cpp" />
+    <ClCompile Include="WeaponMagazinedWGrenade_Animation.cpp" />
+    <ClCompile Include="WeaponMagazinedWGrenade_States.cpp" />
+    <ClCompile Include="WeaponMagazinedWGrenade_upgrades.cpp" />
+    <ClCompile Include="WeaponMagazined_Addons.cpp" />
+    <ClCompile Include="WeaponMagazined_Animation.cpp" />
+    <ClCompile Include="WeaponMagazined_Load.cpp" />
+    <ClCompile Include="WeaponMagazined_Reload.cpp" />
+    <ClCompile Include="WeaponMagazined_States.cpp" />
+    <ClCompile Include="WeaponMagazined_upgrades.cpp" />
     <ClCompile Include="WeaponPistol.cpp" />
     <ClCompile Include="WeaponPM.cpp">
       <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">pch_script.h</PrecompiledHeaderFile>
@@ -9609,6 +9620,13 @@
     </ClCompile>
     <ClCompile Include="weapon_ammo_dump_impl.cpp" />
     <ClCompile Include="weapon_dump_impl.cpp" />
+    <ClCompile Include="Weapon_Load.cpp" />
+    <ClCompile Include="Weapon_PH.cpp" />
+    <ClCompile Include="Weapon_ReloadAmmo.cpp" />
+    <ClCompile Include="Weapon_States.cpp" />
+    <ClCompile Include="Weapon_state_net.cpp" />
+    <ClCompile Include="Weapon_XFORM.cpp" />
+    <ClCompile Include="Weapon_Zooming.cpp" />
     <ClCompile Include="Wound.cpp" />
     <ClCompile Include="xrClientsPool.cpp" />
     <ClCompile Include="xrGame.cpp" />

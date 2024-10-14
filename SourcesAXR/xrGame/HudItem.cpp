@@ -192,16 +192,6 @@ void CHudItem::OnAnimationEnd(u32 state)
 	}
 }
 
-void CHudItem::PlayAnimBore()
-{
-	if (IsMisfireNow())
-		PlayHUDMotionIfExists({ "anm_bore_jammed", "anm_bore" }, true, GetState());
-	else if (IsMagazineEmpty())
-		PlayHUDMotionIfExists({ "anm_bore_empty", "anm_bore" }, true, GetState());
-	else
-		PlayHUDMotion("anm_bore", TRUE, this, GetState());
-}
-
 bool CHudItem::ActivateItem() 
 {
 	OnActiveItem	();
@@ -462,6 +452,19 @@ BOOL CHudItem::GetHUDmode()
 	else
 		return FALSE;
 }
+
+// PLAY HUD ANIM	*----------------------------------------------------------------------------------*
+
+void CHudItem::PlayAnimBore()
+{
+	if (IsMisfireNow())
+		PlayHUDMotionIfExists({ "anm_bore_jammed", "anm_bore" }, true, GetState());
+	else if (IsMagazineEmpty())
+		PlayHUDMotionIfExists({ "anm_bore_empty", "anm_bore" }, true, GetState());
+	else
+		PlayHUDMotion("anm_bore", TRUE, this, GetState());
+}
+
 
 void CHudItem::PlayAnimIdle()
 {

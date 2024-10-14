@@ -2551,6 +2551,9 @@
     <Filter Include="Core\Client\Objects\items &amp; weapons\Devices\SleepingBag">
       <UniqueIdentifier>{07269ab8-75de-41e4-9c7c-4e139a20481a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Core\Client\Objects\items &amp; weapons\Weapons\Custom Weapon\Weapon Generic\Intertion">
+      <UniqueIdentifier>{ef6e1c98-f612-4cc6-a3f4-7eb612662fd9}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="mt_config.h">
@@ -7342,7 +7345,6 @@
     <ClInclude Include="ui\UIArtefactPanel.h">
       <Filter>UI\Common\MainIngame</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\xrPhysics\xrPhysics.h" />
     <ClInclude Include="physics_game.h" />
     <ClInclude Include="trajectories.h">
       <Filter>AI\AMonsters\common\trajectories</Filter>
@@ -7376,18 +7378,6 @@
     </ClInclude>
     <ClInclude Include="WeaponAttaches.h">
       <Filter>Core\Client\Objects\items &amp; weapons\Weapons\Custom Weapon\Addons</Filter>
-    </ClInclude>
-    <ClInclude Include="..\xrGame\doors.h">
-      <Filter>AI\AComponents\doors_manager</Filter>
-    </ClInclude>
-    <ClInclude Include="..\xrGame\doors_door.h">
-      <Filter>AI\AComponents\doors_manager\door</Filter>
-    </ClInclude>
-    <ClInclude Include="..\xrGame\doors_actor.h">
-      <Filter>AI\AComponents\doors_manager\actor</Filter>
-    </ClInclude>
-    <ClInclude Include="..\xrGame\doors_manager.h">
-      <Filter>AI\AComponents\doors_manager\manager</Filter>
     </ClInclude>
     <ClInclude Include="SleepingBag.h">
       <Filter>Core\Client\Objects\items &amp; weapons\Devices\SleepingBag</Filter>
@@ -11030,6 +11020,9 @@
     </ClCompile>
     <ClCompile Include="SleepingBag.cpp">
       <Filter>Core\Client\Objects\items &amp; weapons\Devices\SleepingBag</Filter>
+    </ClCompile>
+    <ClCompile Include="WeaponInertion.cpp">
+      <Filter>Core\Client\Objects\items &amp; weapons\Weapons\Custom Weapon\Weapon Generic\Intertion</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

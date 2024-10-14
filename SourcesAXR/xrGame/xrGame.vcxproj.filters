@@ -1738,9 +1738,6 @@
     <Filter Include="Core\Client\Objects\items &amp; weapons\Weapons\Custom Weapon\RocketLauncher">
       <UniqueIdentifier>{09fba0cb-f389-4857-807a-f2b5d2bedb77}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Core\Client\Objects\items &amp; weapons\Weapons\Custom Weapon\Automatic">
-      <UniqueIdentifier>{5325b26b-22f7-44b9-9018-f17ca4a1211c}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Core\Client\Objects\items &amp; weapons\Weapons\Various weapons">
       <UniqueIdentifier>{1c0ea639-8c45-4151-82c4-6b43ef0c3aee}</UniqueIdentifier>
     </Filter>
@@ -2523,6 +2520,18 @@
     </Filter>
     <Filter Include="UI\Common\PDA\Diary">
       <UniqueIdentifier>{05e38e5e-60ed-412e-8a86-28bfe2870c6e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Client\Objects\items &amp; weapons\Weapons\Custom Weapon\Weapon Generic\STUFF BULLETS">
+      <UniqueIdentifier>{c39d71cb-11cc-4845-83b5-4a45fc4b014d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Client\Objects\items &amp; weapons\Weapons\Custom Weapon\Weapon Generic\WEAPON">
+      <UniqueIdentifier>{9e3b6872-9a84-457c-bbad-cfd3b078e95a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Client\Objects\items &amp; weapons\Weapons\Custom Weapon\Weapon Generic\Automatic">
+      <UniqueIdentifier>{5325b26b-22f7-44b9-9018-f17ca4a1211c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Client\Objects\items &amp; weapons\Weapons\Custom Weapon\Weapon Generic\AutomaticG">
+      <UniqueIdentifier>{4868eb53-4691-4cc7-a1a1-9f9283cbda1b}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -5757,18 +5766,6 @@
     <ClInclude Include="physic_item_inline.h">
       <Filter>Core\Client\Objects\inventory\PhysicItem</Filter>
     </ClInclude>
-    <ClInclude Include="CameraRecoil.h">
-      <Filter>Core\Client\Objects\items &amp; weapons\Weapons\Custom Weapon\Weapon Generic</Filter>
-    </ClInclude>
-    <ClInclude Include="first_bullet_controller.h">
-      <Filter>Core\Client\Objects\items &amp; weapons\Weapons\Custom Weapon\Weapon Generic</Filter>
-    </ClInclude>
-    <ClInclude Include="ShootingObject.h">
-      <Filter>Core\Client\Objects\items &amp; weapons\Weapons\Custom Weapon\Weapon Generic</Filter>
-    </ClInclude>
-    <ClInclude Include="Weapon.h">
-      <Filter>Core\Client\Objects\items &amp; weapons\Weapons\Custom Weapon\Weapon Generic</Filter>
-    </ClInclude>
     <ClInclude Include="WeaponAmmo.h">
       <Filter>Core\Client\Objects\items &amp; weapons\Weapons\Custom Weapon\Ammo</Filter>
     </ClInclude>
@@ -5803,10 +5800,7 @@
       <Filter>Core\Client\Objects\items &amp; weapons\Weapons\Custom Weapon\RocketLauncher</Filter>
     </ClInclude>
     <ClInclude Include="WeaponMagazined.h">
-      <Filter>Core\Client\Objects\items &amp; weapons\Weapons\Custom Weapon\Automatic</Filter>
-    </ClInclude>
-    <ClInclude Include="WeaponMagazinedWGrenade.h">
-      <Filter>Core\Client\Objects\items &amp; weapons\Weapons\Custom Weapon\Automatic</Filter>
+      <Filter>Core\Client\Objects\items &amp; weapons\Weapons\Custom Weapon\Weapon Generic\Automatic</Filter>
     </ClInclude>
     <ClInclude Include="WeaponWalther.h">
       <Filter>Core\Client\Objects\items &amp; weapons\Weapons\Various weapons\Weapon Walther 99</Filter>
@@ -7510,6 +7504,21 @@
     </ClInclude>
     <ClInclude Include="ui\UIDiaryWnd.h">
       <Filter>UI\Common\PDA\Diary</Filter>
+    </ClInclude>
+    <ClInclude Include="CameraRecoil.h">
+      <Filter>Core\Client\Objects\items &amp; weapons\Weapons\Custom Weapon\Weapon Generic\STUFF BULLETS</Filter>
+    </ClInclude>
+    <ClInclude Include="first_bullet_controller.h">
+      <Filter>Core\Client\Objects\items &amp; weapons\Weapons\Custom Weapon\Weapon Generic\STUFF BULLETS</Filter>
+    </ClInclude>
+    <ClInclude Include="ShootingObject.h">
+      <Filter>Core\Client\Objects\items &amp; weapons\Weapons\Custom Weapon\Weapon Generic\STUFF BULLETS</Filter>
+    </ClInclude>
+    <ClInclude Include="Weapon.h">
+      <Filter>Core\Client\Objects\items &amp; weapons\Weapons\Custom Weapon\Weapon Generic\WEAPON</Filter>
+    </ClInclude>
+    <ClInclude Include="WeaponMagazinedWGrenade.h">
+      <Filter>Core\Client\Objects\items &amp; weapons\Weapons\Custom Weapon\Weapon Generic\AutomaticG</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -9397,24 +9406,6 @@
     <ClCompile Include="physic_item.cpp">
       <Filter>Core\Client\Objects\inventory\PhysicItem</Filter>
     </ClCompile>
-    <ClCompile Include="first_bullet_controller.cpp">
-      <Filter>Core\Client\Objects\items &amp; weapons\Weapons\Custom Weapon\Weapon Generic</Filter>
-    </ClCompile>
-    <ClCompile Include="ShootingObject.cpp">
-      <Filter>Core\Client\Objects\items &amp; weapons\Weapons\Custom Weapon\Weapon Generic</Filter>
-    </ClCompile>
-    <ClCompile Include="Weapon.cpp">
-      <Filter>Core\Client\Objects\items &amp; weapons\Weapons\Custom Weapon\Weapon Generic</Filter>
-    </ClCompile>
-    <ClCompile Include="WeaponDispersion.cpp">
-      <Filter>Core\Client\Objects\items &amp; weapons\Weapons\Custom Weapon\Weapon Generic</Filter>
-    </ClCompile>
-    <ClCompile Include="WeaponFire.cpp">
-      <Filter>Core\Client\Objects\items &amp; weapons\Weapons\Custom Weapon\Weapon Generic</Filter>
-    </ClCompile>
-    <ClCompile Include="WeaponUpgrade.cpp">
-      <Filter>Core\Client\Objects\items &amp; weapons\Weapons\Custom Weapon\Weapon Generic</Filter>
-    </ClCompile>
     <ClCompile Include="WeaponAmmo.cpp">
       <Filter>Core\Client\Objects\items &amp; weapons\Weapons\Custom Weapon\Ammo</Filter>
     </ClCompile>
@@ -9449,10 +9440,7 @@
       <Filter>Core\Client\Objects\items &amp; weapons\Weapons\Custom Weapon\RocketLauncher</Filter>
     </ClCompile>
     <ClCompile Include="WeaponMagazined.cpp">
-      <Filter>Core\Client\Objects\items &amp; weapons\Weapons\Custom Weapon\Automatic</Filter>
-    </ClCompile>
-    <ClCompile Include="WeaponMagazinedWGrenade.cpp">
-      <Filter>Core\Client\Objects\items &amp; weapons\Weapons\Custom Weapon\Automatic</Filter>
+      <Filter>Core\Client\Objects\items &amp; weapons\Weapons\Custom Weapon\Weapon Generic\Automatic</Filter>
     </ClCompile>
     <ClCompile Include="WeaponWalther.cpp">
       <Filter>Core\Client\Objects\items &amp; weapons\Weapons\Various weapons\Weapon Walther 99</Filter>
@@ -11260,6 +11248,81 @@
     </ClCompile>
     <ClCompile Include="ui\UIDiaryWnd2.cpp">
       <Filter>UI\Common\PDA\Diary</Filter>
+    </ClCompile>
+    <ClCompile Include="first_bullet_controller.cpp">
+      <Filter>Core\Client\Objects\items &amp; weapons\Weapons\Custom Weapon\Weapon Generic\STUFF BULLETS</Filter>
+    </ClCompile>
+    <ClCompile Include="ShootingObject.cpp">
+      <Filter>Core\Client\Objects\items &amp; weapons\Weapons\Custom Weapon\Weapon Generic\STUFF BULLETS</Filter>
+    </ClCompile>
+    <ClCompile Include="Weapon.cpp">
+      <Filter>Core\Client\Objects\items &amp; weapons\Weapons\Custom Weapon\Weapon Generic\WEAPON</Filter>
+    </ClCompile>
+    <ClCompile Include="Weapon_Load.cpp">
+      <Filter>Core\Client\Objects\items &amp; weapons\Weapons\Custom Weapon\Weapon Generic\WEAPON</Filter>
+    </ClCompile>
+    <ClCompile Include="Weapon_XFORM.cpp">
+      <Filter>Core\Client\Objects\items &amp; weapons\Weapons\Custom Weapon\Weapon Generic\WEAPON</Filter>
+    </ClCompile>
+    <ClCompile Include="Weapon_PH.cpp">
+      <Filter>Core\Client\Objects\items &amp; weapons\Weapons\Custom Weapon\Weapon Generic\WEAPON</Filter>
+    </ClCompile>
+    <ClCompile Include="Weapon_state_net.cpp">
+      <Filter>Core\Client\Objects\items &amp; weapons\Weapons\Custom Weapon\Weapon Generic\WEAPON</Filter>
+    </ClCompile>
+    <ClCompile Include="Weapon_Zooming.cpp">
+      <Filter>Core\Client\Objects\items &amp; weapons\Weapons\Custom Weapon\Weapon Generic\WEAPON</Filter>
+    </ClCompile>
+    <ClCompile Include="Weapon_ReloadAmmo.cpp">
+      <Filter>Core\Client\Objects\items &amp; weapons\Weapons\Custom Weapon\Weapon Generic\WEAPON</Filter>
+    </ClCompile>
+    <ClCompile Include="Weapon_States.cpp">
+      <Filter>Core\Client\Objects\items &amp; weapons\Weapons\Custom Weapon\Weapon Generic\WEAPON</Filter>
+    </ClCompile>
+    <ClCompile Include="WeaponFire.cpp">
+      <Filter>Core\Client\Objects\items &amp; weapons\Weapons\Custom Weapon\Weapon Generic\WEAPON</Filter>
+    </ClCompile>
+    <ClCompile Include="WeaponDispersion.cpp">
+      <Filter>Core\Client\Objects\items &amp; weapons\Weapons\Custom Weapon\Weapon Generic\WEAPON</Filter>
+    </ClCompile>
+    <ClCompile Include="WeaponInertion.cpp">
+      <Filter>Core\Client\Objects\items &amp; weapons\Weapons\Custom Weapon\Weapon Generic\WEAPON</Filter>
+    </ClCompile>
+    <ClCompile Include="WeaponUpgrade.cpp">
+      <Filter>Core\Client\Objects\items &amp; weapons\Weapons\Custom Weapon\Weapon Generic\WEAPON</Filter>
+    </ClCompile>
+    <ClCompile Include="WeaponMagazinedWGrenade.cpp">
+      <Filter>Core\Client\Objects\items &amp; weapons\Weapons\Custom Weapon\Weapon Generic\AutomaticG</Filter>
+    </ClCompile>
+    <ClCompile Include="WeaponMagazined_Addons.cpp">
+      <Filter>Core\Client\Objects\items &amp; weapons\Weapons\Custom Weapon\Weapon Generic\Automatic</Filter>
+    </ClCompile>
+    <ClCompile Include="WeaponMagazined_Load.cpp">
+      <Filter>Core\Client\Objects\items &amp; weapons\Weapons\Custom Weapon\Weapon Generic\Automatic</Filter>
+    </ClCompile>
+    <ClCompile Include="WeaponMagazined_upgrades.cpp">
+      <Filter>Core\Client\Objects\items &amp; weapons\Weapons\Custom Weapon\Weapon Generic\Automatic</Filter>
+    </ClCompile>
+    <ClCompile Include="WeaponMagazined_Animation.cpp">
+      <Filter>Core\Client\Objects\items &amp; weapons\Weapons\Custom Weapon\Weapon Generic\Automatic</Filter>
+    </ClCompile>
+    <ClCompile Include="WeaponMagazined_States.cpp">
+      <Filter>Core\Client\Objects\items &amp; weapons\Weapons\Custom Weapon\Weapon Generic\Automatic</Filter>
+    </ClCompile>
+    <ClCompile Include="WeaponMagazined_Reload.cpp">
+      <Filter>Core\Client\Objects\items &amp; weapons\Weapons\Custom Weapon\Weapon Generic\Automatic</Filter>
+    </ClCompile>
+    <ClCompile Include="WeaponMagazinedWGrenade_States.cpp">
+      <Filter>Core\Client\Objects\items &amp; weapons\Weapons\Custom Weapon\Weapon Generic\AutomaticG</Filter>
+    </ClCompile>
+    <ClCompile Include="WeaponMagazinedWGrenade_Animation.cpp">
+      <Filter>Core\Client\Objects\items &amp; weapons\Weapons\Custom Weapon\Weapon Generic\AutomaticG</Filter>
+    </ClCompile>
+    <ClCompile Include="WeaponMagazinedWGrenade_Addons.cpp">
+      <Filter>Core\Client\Objects\items &amp; weapons\Weapons\Custom Weapon\Weapon Generic\AutomaticG</Filter>
+    </ClCompile>
+    <ClCompile Include="WeaponMagazinedWGrenade_upgrades.cpp">
+      <Filter>Core\Client\Objects\items &amp; weapons\Weapons\Custom Weapon\Weapon Generic\AutomaticG</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
